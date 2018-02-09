@@ -1,177 +1,198 @@
- MBED START!
-Time is set to (GMT+9): Wed Jan 17 17:33:19 2018
+Time is set to (GMT+9): Fri Feb  9 12:49:56 2018
 
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [573] [INFO]: ThingPlug_Simple_SDK
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [114] [INFO]: handleMQTTSetCallbacks()
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [545] [INFO]: tpMQTTSetCallbacks result : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/simple/Simple.c] [271] [INFO]: tpSimpleInitialize
-                          serviceID : myservice, deviceID: mydevice
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [548] [INFO]: tpSimpleInitialize : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [553] [INFO]: client id : hjkim1_A1:B2:C3:D4:E5:F
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [150] [INFO]: handleMQTTCreate()
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [152] [INFO]: Use secure(TLS) socket, host: , port:8883
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [190] [INFO]: IP address is 192.168.0.14
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [191] [INFO]: MAC address is 90:A2:DA:10:30:DF
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [192] [INFO]: Gateway address is 192.168.0.1
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [193] [INFO]: Subnet Mask address is 255.255.255.0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [252] [INFO]: MQTT Connected
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [68] [INFO]: MQTTConnected result : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [75] [INFO]: CONNECTION_STATUS : 2
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [263] [INFO]: MQTT Request Subscribe topic : v1/dev/myservice/mydevice/down
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [79] [INFO]: MQTTSubscribed result : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/simple/Simple.c] [159] [INFO]: tpSimpleAttribute
-                         topic : v1/dev/myservice/mydevice/attribute
-                                                                  {
-                                                                        "sysAvailableMemory":    512000,
-                                "sysFirmwareVersion":   "2.0.0",
-                                                                        "sysHardwareVersion":    "1.0",
-                                "sysSerialNumber":      "2160900865",
-                                                                        "sysErrorCode":  0,
-                        "sysNetworkType":       "ethernet",
-                                                                "sysDeviceIpAddress":    "192.168.0.14",
-                                "sysThingPlugIpAddress":        " ",
-                "sysLocationLatitude":  37.380257,
-                                                        "sysLocationLongitude":  127.115479,
-                        "act7colorLed": 0
-                                         }
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [568] [INFO]: tpSDKCreate result : 0
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 31.28,
-                "humi1":        48,
-                                        "light1":       228,
-                                                                "ts":   1516178001
-         }
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:21] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:33:32] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:33:32] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 56.87,
-                "humi1":        47,
-                                        "light1":       237,
-                                                                "ts":   1516178012
-         }
-[2018-01-17 17:33:32] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:32] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:32] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:33:42] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:33:42] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 42.38,
-                "humi1":        48,
-                                        "light1":       238,
-                                                                "ts":   1516178022
-         }
-[2018-01-17 17:33:42] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:42] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:42] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"deviceId":"4b0b54c0-f6a5-11e7-8ba2-...","cmdId":1824370360,"cmd":"setAttribute","attribute":{"act7colorLed":4}}
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/middleware/MA/MA.c] [240] [INFO]: act7colorLed : 4, 1824370360
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/src/simple/Simple.c] [159] [INFO]: tpSimpleAttribute
-                         topic : v1/dev/myservice/mydevice/attribute
-                                                                  {
-                                                                        "act7colorLed":  4
-                 }
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:47] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":4,"cmd":"jsonRpc","rpcMode":"oneway","rpcReq":{"jsonrpc":"2.0","method":"tp_user","params":[{"act7colorLed":"1"}],"id":1123217703}}
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/middleware/MA/MA.c] [173] [INFO]: RPC_USER
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/middleware/MA/MA.c] [179] [INFO]:
-       rpc : 2.0,
-                 id : 1123217703,
-                                 cmd : 0
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/src/simple/Simple.c] [360] [INFO]: tpSimpleRawResult
-                         topic : v1/dev/myservice/mydevice/up
-                                                           {
-                                                                "cmd":  "jsonRpc",
-                "cmdId":        1,
-                                        "result":       "success",
-                                                                        "rpcRsp":        {
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [590] [INFO]: ThingPlug_Simple_SDK
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [114] [INFO]: handleMQTTSetCallbacks()
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [562] [INFO]: tpMQTTSetCallbacks result : 0
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/simple/Simple.c] [277] [INFO]: tpSimpleInitialize
+                                                                                                   serviceID : myservice, deviceID: mydevice
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [565] [INFO]: tpSimpleInitialize : 0
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [570] [INFO]: client id : mydevice_A1:B2:C3:D4:E5:F
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [150] [INFO]: handleMQTTCreate()
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [152] [INFO]: Use secure(TLS) socket, host:xxx.xxx.xxx.xxx, port:8883
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [190] [INFO]: IP address is 192.168.0.14
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [191] [INFO]: MAC address is 90:A2:DA:10:30:DF
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [192] [INFO]: Gateway address is 192.168.0.1
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [193] [INFO]: Subnet Mask address is 255.255.255.0
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [252] [INFO]: MQTT Connected
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [68] [INFO]: MQTTConnected result : 0
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [75] [INFO]: CONNECTION_STATUS : 2
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [263] [INFO]: MQTT Request Subscribe topic : v1/dev/myservice/mydevice/down
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/middleware/MA/MA.c] [79] [INFO]: MQTTSubscribed result : 0
+[2018-02-09 12:49:58] [/src/Library/SimpleAPI/src/simple/Simple.c] [159] [INFO]: tpSimpleAttribute
+                                                                                                  topic : v1/dev/myservice/mydevice/attribute
+                                   {
+                                        "sysAvailableMemory":   512000,
+                                                                        "sysFirmwareVersion":   "2.0.0",
+                                                                                                                "sysHardwareVersion":   "1.0",
+                                        "sysSerialNumber":      "2160900865",
+                                                                                "sysErrorCode": 0,
+                                                                                                        "sysNetworkType":       "ethernet",
+                                        "sysDeviceIpAddress":   "192.168.0.14",
+                                                                                "sysThingPlugIpAddress":        "xxx.xxx.xxx.xxx",
+                                "sysLocationLatitude":  37.380257,
+                                                                        "sysLocationLongitude": 127.115479,
+        "act7colorLed": 0
+                         }
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 0
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [585] [INFO]: tpSDKCreate result : 0
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
+                                                                                                  topic : v1/dev/myservice/mydevice/telemetry
+                                   {
+                                        "temp1":        46.08,
+                                                                "humi1":        48,
+                                                                                        "light1":       208,
+        "ts":   1518148199
+                          }
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":-9999,"cmd":"jsonRpc","rpcReq":{"jsonrpc":"2.0","method":"tp_fwupgrade","params":["http://xxx.xxx.xxx.xxx:80/portal/services/myservice/firmwares/5/5d213e39-01c1-4697-9dd1-5f58f694bd4e/download","http://xxx.xxx.xxx.xxx:80/portal/firmware-upgrade-devices/7/5d213e39-01c1-4697-9dd1-5f58f694bd4e","mydevice","mydevice"],"id":199856882}}
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [169] [INFO]: RPC_FIRMWARE_UPGRADE
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/simple/Simple.c] [212] [INFO]: tpSimpleResult
+                                                                                               topic : v1/dev/myservice/mydevice/up
+                         {
+                                "cmd":  "jsonRpc",
+                                                        "cmdId":        1,
+                                                                                "result":       "success",
+        "rpcRsp":       {
+                                        "jsonrpc":      "2.0",
+                                                                        "id":   199856882,
+                                                                                                        "result":       {
+                                        "status":       "SUCCESS"
+                                                                                }
+                                                                                        }
+                                                                                         }
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:49:59] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"deviceId":"123-456-789","cmdId":999425835,"cmd":"setAttribute","attribute":{"act7colorLed":3}}
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/middleware/MA/MA.c] [251] [INFO]: act7colorLed : 3, 999425835
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/src/simple/Simple.c] [159] [INFO]: tpSimpleAttribute
+                                                                                                  topic : v1/dev/myservice/mydevice/attribute
+                                   {
+                                        "act7colorLed": 3
+                                                         }
+[2018-02-09 12:50:01] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:02] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:04] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:50:04] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:50:04] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"deviceId":"123-456-789","cmdId":227472500,"cmd":"setAttribute","attribute":{"act7colorLed":9}}
+[2018-02-09 12:50:04] [/src/Library/SimpleAPI/middleware/MA/MA.c] [251] [INFO]: act7colorLed : 9, 227472500
+[2018-02-09 12:50:04] [/src/Library/SimpleAPI/src/simple/Simple.c] [159] [INFO]: tpSimpleAttribute
+                                                                                                  topic : v1/dev/myservice/mydevice/attribute
+                                   {
+                                        "act7colorLed": 3
+                                                         }
+[2018-02-09 12:50:05] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:05] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":4,"cmd":"jsonRpc","rpcReq":{"jsonrpc":"2.0","method":"tp_user","params":[{"act7colorLed":3}],"id":199856883}}
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/middleware/MA/MA.c] [182] [INFO]: RPC_USER
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/middleware/MA/MA.c] [188] [INFO]:
+                                                                                rpc : 2.0,
+                                                                                          id : 199856883,
+ control : 3
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/src/simple/Simple.c] [366] [INFO]: tpSimpleRawResult
+                                                                                                  topic : v1/dev/myservice/mydevice/up
+                            {"cmd":"jsonRpc","cmdId":1,"result":"success","rpcRsp":{"jsonrpc":"2.0","id":199856883,"result":{"act7colorLed":3}}}
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:06] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:07] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:50:07] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:50:07] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":5,"cmd":"jsonRpc","rpcReq":{"jsonrpc":"2.0","method":"tp_user","params":[{"act7colorLed":9}],"id":199856884}}
+[2018-02-09 12:50:08] [/src/Library/SimpleAPI/middleware/MA/MA.c] [182] [INFO]: RPC_USER
+[2018-02-09 12:50:08] [/src/Library/SimpleAPI/middleware/MA/MA.c] [188] [INFO]:
+                                                                                rpc : 2.0,
+                                                                                          id : 199856884,
+ control : 9
+[2018-02-09 12:50:08] [/src/Library/SimpleAPI/src/simple/Simple.c] [212] [INFO]: tpSimpleResult
+                                                                                               topic : v1/dev/myservice/mydevice/up
+                         {
+                                "cmd":  "jsonRpc",
+                                                        "cmdId":        1,
+                                                                                "result":       "fail",
+                                                                                                        "rpcRsp":       {
                                 "jsonrpc":      "2.0",
-                                                                "id":   1123217703,
-                        "result":       {"act7colorLed":0}
-                                                                }
-                                                                 }
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:49] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:52] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:33:52] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 25.09,
-                "humi1":        49,
-                                        "light1":       209,
-                                                                "ts":   1516178032
-         }
-[2018-01-17 17:33:52] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:33:52] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:33:52] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:34:02] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:34:02] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 47.07,
-                "humi1":        47,
-                                        "light1":       207,
-                                                                "ts":   1516178042
-         }
-[2018-01-17 17:34:02] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:34:02] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:34:02] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:34:12] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:34:12] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 37.94,
-                "humi1":        44,
-                                        "light1":       244,
-                                                                "ts":   1516178052
-         }
-[2018-01-17 17:34:12] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:34:12] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:34:12] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":-9999,"cmd":"jsonRpc","rpcMode":"oneway","rpcReq":{"jsonrpc":"2.0","method":"tp_remote","params":[{"act7colorLed":1}],"id":1123217704}}
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/src/simple/Simple.c] [206] [INFO]: tpSimpleResult
-                      topic : v1/dev/myservice/mydevice/up
-                                                        {
-                                                                "cmd":  "jsonRpc",
-                "cmdId":        1,
-                                        "result":       "fail",
-                                                                "rpcRsp":        {
-                        "jsonrpc":      "2.0",
-                                                        "id":   1123217704,
-                "error":        {
-                                                        "code": 106,
-                                                                                 "message":      "FAIL"
-                                        }
-                                                }
-                                                 }
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:34:20] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:34:22] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
-[2018-01-17 17:34:22] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
-                         topic : v1/dev/myservice/mydevice/telemetry
-                                                                  {
-                                                                        "temp1": 65.29,
-                "humi1":        49,
-                                        "light1":       229,
-                                                                "ts":   1516178062
-         }
-[2018-01-17 17:34:22] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
-[2018-01-17 17:34:22] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
-[2018-01-17 17:34:22] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
+                                                                "id":   199856884,
+                                                                                                "error":        {
+                                "code": 106,
+                                                                "message":      "FAIL"
+                                                                                                }
+                                                                                                        }
+ }
+[2018-02-09 12:50:08] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:08] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:09] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
+[2018-02-09 12:50:09] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
+                                                                                                  topic : v1/dev/myservice/mydevice/telemetry
+                                   {
+                                        "temp1":        68.07,
+                                                                "humi1":        47,
+                                                                                        "light1":       207,
+        "ts":   1518148209
+                          }
+[2018-02-09 12:50:09] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:09] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:09] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
+[2018-02-09 12:50:19] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
+[2018-02-09 12:50:19] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
+                                                                                                  topic : v1/dev/myservice/mydevice/telemetry
+                                   {
+                                        "temp1":        64.30,
+                                                                "humi1":        40,
+                                                                                        "light1":       230,
+        "ts":   1518148219
+                          }
+[2018-02-09 12:50:19] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:19] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:19] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
+[2018-02-09 12:50:29] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
+[2018-02-09 12:50:29] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
+                                                                                                  topic : v1/dev/myservice/mydevice/telemetry
+                                   {
+                                        "temp1":        36.29,
+                                                                "humi1":        49,
+                                                                                        "light1":       229,
+        "ts":   1518148229
+                          }
+[2018-02-09 12:50:29] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:29] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:29] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [82] [INFO]: CallMessageArrivedCallback()
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/middleware/MA/MA.c] [97] [INFO]: MQTTMessageArrived topic : v1/dev/myservice/mydevice/down, step : 2
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/middleware/MA/MA.c] [104] [INFO]: payload : {"serviceName":"myservice","deviceName":"mydevice","cmdId":-9999,"cmd":"jsonRpc","rpcReq":{"jsonrpc":"2.0","method":"tp_remote","params":[["AT+CPSMS=1,,,01000001,00100011"]],"id":199856885}}
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/src/simple/Simple.c] [212] [INFO]: tpSimpleResult
+                                                                                               topic : v1/dev/myservice/mydevice/up
+                         {
+                                "cmd":  "jsonRpc",
+                                                        "cmdId":        1,
+                                                                                "result":       "success",
+        "rpcRsp":       {
+                                        "jsonrpc":      "2.0",
+                                                                        "id":   199856885,
+                                                                                                        "result":       {
+                                        "status":       "SUCCESS"
+                                                                                }
+                                                                                        }
+                                                                                         }
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:36] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:39] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [420] [INFO]: handleMQTTIsConnected()
+[2018-02-09 12:50:39] [/src/Library/SimpleAPI/src/simple/Simple.c] [124] [INFO]: tpSimpleTelemetry
+                                                                                                  topic : v1/dev/myservice/mydevice/telemetry
+                                   {
+                                        "temp1":        63.63,
+                                                                "humi1":        43,
+                                                                                        "light1":       213,
+        "ts":   1518148239
+                          }
+[2018-02-09 12:50:39] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [358] [INFO]: handleMQTTPublishMessage()
+[2018-02-09 12:50:39] [/src/Library/SimpleAPI/middleware/MA/MA.c] [93] [INFO]: MQTTMessageDelivered token : 0, step : 2
+[2018-02-09 12:50:39] [/src/Library/SimpleAPI/src/net/MQTT_handler.cpp] [403] [INFO]: handleMQTTYield()
 
